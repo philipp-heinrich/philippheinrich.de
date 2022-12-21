@@ -1,6 +1,6 @@
 const siteMeta = {
 	title: "Philipp Heinrich",
-	description: "",
+	description: "a personal website",
 	lang: "en-GB",
 	ogLocale: "en_GB",
 	githubUrl: "https://github.com/philipp-heinrich",

@@ -5,7 +5,7 @@ import aboutImg from "../assets/about-astro.png";
 
 const meta = {
 	title: "About",
-	description: "I'm a starter theme for Astro.build",
+	//description: "",
 };
 ---
 
@@ -16,13 +16,14 @@ const meta = {
 			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
 			website.
 		</p>
-		<div class="flex justify-center">
+		<div class="flex justify-left">
 			<Image
 				src={aboutImg}
 				alt="A cartoon cactus looking at the 'Astro.build' logo"
 				loading="eager"
 			/>
 		</div>
+		<!--
 		<p>Here are my some of my awesome built in features:</p>
 		<ul class="list-inside list-disc">
 			<li>I'm ultra fast as I'm a static site</li>
@@ -32,17 +33,6 @@ const meta = {
 			<li>I have Tailwind CSS styling</li>
 			<li>Shiki code syntax highlighting</li>
 		</ul>
-		<p>
-			Clone or fork my
-			<a
-				class="cactus-link inline-block"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="github repository"
-			>
-				repo
-			</a> if you like me!
-		</p>
+		 -->
 	</div>
 </PageLayout>
