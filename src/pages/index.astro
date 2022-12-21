@@ -1,0 +1,40 @@
+---
+import PageLayout from "@/layouts/Base";
+import PostPreview from "@/components/blog/PostPreview";
+import SocialList from "@/components/SocialList";
+import { sortMDByDate } from "@/utils";
+import type { Post } from "@/data/posts";
+
+const MAX_POSTS = 10;
+const allPosts = await Astro.glob<Post>("./posts/*.mdx");
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+---
+
+<PageLayout meta={{ title: "Home" }}>
+	<section>
+		<h1 class="title mb-6"> Hej 👋</h1>
+		<p class="mb-4">
+			I'm Philipp Heinrich, a Data Guy from Hamburg. I do all things related to data and cloud ☁️  <br> 
+			
+			Currently, I'm working as a Senior Cloud Data Architect @ doit.com <br>
+			Very much into coffee ☕ and cycling, occasional runner. <br> 
+
+			I'm always looking for the best coffee in town.
+		</p> 
+		<SocialList />
+	</section>
+	<!--
+	<section aria-label="Blog post list" class="mt-16">
+		<h2 class="title mb-4 text-xl">Posts</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{
+				allPostsByDate.map((p) => (
+					<li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full">
+						<PostPreview post={p} as="h2" />
+					</li>
+				))
+			}
+		</ul>
+	</section>
+	 -->
+</PageLayout>
