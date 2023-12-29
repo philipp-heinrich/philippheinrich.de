@@ -23,9 +23,6 @@
       ]
     },
     // Add type definitions for our Vite runtime.
-    "types": [
-      "@astrojs/image/client"
-    ]
   },
   "exclude": [
     "node_modules",
