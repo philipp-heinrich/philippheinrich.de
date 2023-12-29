@@ -1,7 +1,7 @@
 import rss from '@astrojs/rss';
 
 export const get = () => rss({
-  title: 'Philipp Heinrich | Blog',
+  title: 'Philipp Heinrich',
   description: '',
   site: 'https://philippheinrich.de',
   items: import.meta.glob('./**/*.md'),
