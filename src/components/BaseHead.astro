@@ -27,6 +27,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <meta name="title" content={siteTitle} />
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalURL} />
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" />
 
 <!-- Theme Colour -->
 <meta name="theme-color" content={siteConfig.themeColorLight} />
